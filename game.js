@@ -3,13 +3,13 @@
 function computerPlay() {
     let computerChoice = Math.floor(Math.random() * 1000);
     if ((computerChoice % 3) === 0) {
-        return 'Rock';
+        return 'rock';
     }
     else if ((computerChoice % 3) === 1) {
-        return 'Paper';
+        return 'paper';
     }
     else {
-        return 'Scissors';
+        return 'scissors';
     }
 }
 
@@ -18,24 +18,24 @@ function playRound(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         return 'Its a Tie!';
     }
-    else if (playerChoice === 'Rock') {
-        if (computerChoice === 'Scissors') {
+    else if (playerChoice === 'rock') {
+        if (computerChoice === 'scissors') {
             return 'Player Wins!';
         }
         else {
             return 'Computer Wins!';
         }
     }
-    else if (playerChoice === 'Scissors') {
-        if (computerChoice === 'Paper') {
+    else if (playerChoice === 'scissors') {
+        if (computerChoice === 'paper') {
             return 'Player Wins!';
         }
         else {
             return 'Computer Wins!';
         }
     }
-    else if (playerChoice === 'Paper') {
-        if (computerChoice === 'Rock') {
+    else if (playerChoice === 'paper') {
+        if (computerChoice === 'rock') {
             return 'Player Wins!';
         }
         else {
@@ -55,7 +55,7 @@ function game() {
 
     for (let i = 1; i <= 5; i++) {
         const playerChoice = prompt('Enter your choice');
-        if (playerChoice === 'Rock'|| playerChoice === 'Paper' || playerChoice === 'Scissors'){
+        if (playerChoice.toLowerCase() === 'rock'|| playerChoice === 'paper' || playerChoice === 'scissors'){
 
             // Computer gets to choose
             const computerChoice = computerPlay();
