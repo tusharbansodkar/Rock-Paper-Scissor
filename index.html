@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Rock Paper Scissors</h1>
+    </header>
+
+    <p class="text">First to reach 5 wins the game!</p>
+
+    <div class="playing_area">
+        <div class="computer">
+            <h1 class="playername">Computer</h1>
+            <div class="options">
+                <div id="computer_rock" class="choice computer">
+                    <i class="far fa-hand-rock icon"></i>
+                    <span style="display: block; margin-top: 5px;">rock</span>
+                </div>
+                <div id="computer_paper" class="choice computer">
+                    <i class="far fa-hand-paper icon"></i>
+                    <span style="display:block; margin-top: 5px;">paper</span>
+                </div>
+                <div id="computer_scissors" class="choice computer">
+                    <i class="far fa-hand-scissors icon"></i>
+                    <span style="display: block; margin-top: 5px;">scissors</span>
+                </div>
+            </div>
+            <span class="score">Score : <span class="computerPoints">0</span>
+
+            </span>
+        </div>
+
+
+        <div class="player">
+            <h1 class="playername">Player</h1>
+            <div class="options">
+                <div id="player_rock" class="choice player">
+                    <i class="far fa-hand-rock icon"></i>
+                    <span style="display: block; margin-top: 5px;">rock</span>
+                </div>
+                <div id="player_paper" class="choice player">
+                    <i class="far fa-hand-paper icon"></i>
+                    <span style="display:block; margin-top: 5px;">paper</span>
+                </div>
+                <div id="player_scissors" class="choice player">
+                    <i class="far fa-hand-scissors icon"></i>
+                    <span style="display: block; margin-top: 5px;">scissors</span>
+                </div>
+            </div>
+            <span class="score">Score : <span class="playerPoints">0</span>
+            </span>
+        </div>
+
+        
+    </div>
+
+    <button class="btnRefresh">Play Again...</button>
+    <div class="result">
+       
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
